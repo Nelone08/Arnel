@@ -1,813 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me</title>
-<style>
-   body{
-   
-     background: url(image1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-width: 850px;
-height: 700px;
-left: 100px;
-top: 90px;
-}
-div.blue{
-     /* profile card */
-
-position: absolute;
-width: 399px;
-height: 707px;
-left: 5px;
-top: 400px;
-
-background: #1877F2;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-
-}
-div.picture{
-     /* profile picture */
-
-position: absolute;
-width: 199.5px;
-height: 202px;
-left: 110px;
-top: 300px;
-
-background: url(21.jpg);
-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-border-radius: 20px;
-
-}
-div.name{
-     /* Arnel G Rabacio */
-
-position: absolute;
-width: 233.41px;
-height: 36px;
-left: 110px;
-top: 470px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 28.4197px;
-line-height: 36px;
-/* identical to box height, or 125% */
-
-color: #0B0909;
-
-
-}
-div.youtub{
-     /* image 1 */
-
-position: absolute;
-width: 53px;
-height: 46px;
-left: 20px;
-top: 550px;
-
-background: url(image.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-div.twit{
-     /* image 1 */
-
-position: absolute;
-width: 53px;
-height: 46px;
-left: 120px;
-top: 550px;
-background: url(image.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-div.FB{
-     /* image 1 */
-
-position: absolute;
-width: 53px;
-height: 46px;
-left: 220px;
-top: 550px;
-
-background: url(image.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-div.getgub{
-     /* image 1 */
-
-position: absolute;
-width: 53px;
-height: 46px;
-left: 320px;
-top: 550px;
-
-background: url(image.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-
-div.Box{
-     /* contact card */
-
-position: absolute;
-width: 349.12px;
-height: 353.5px;
-left: 30px;
-top: 700px;
-
-background: #57657A;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.Phone{
-     /* phone */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-position: relative;
-width: 44px;
-height: 44px;
-left: 60px;
-top: 750px;
-
-}
-div.line{
-     /* Email Group */
-
-position: absolute;
-width: 255.36px;
-height: 0px;
-left: 120px;
-top: 760px;
-
-}
-div.Number{
-     /* +09518699649 */
-
-position: absolute;
-width: 150px;
-height: 200px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 50px;
-line-height: 500px;
-/* identical to box height, or 143% */
-
-color: #000000;
-
-
-}
-div.iconMessage{
-     /* phone */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-position: relative;
-width: 44px;
-height: 44px;
-left: 60px;
-top: 800px;
-
-}
-div.email{
-     /* arnelrabacio08@gmail.com */
-
-position: absolute;
-width: 182px;
-height: 20px;
-left: 120px;
-top: 850px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-
-color: #000000;
-
-
-}
-div.line2{
-     /* Email Group */
-
-position: absolute;
-width: 255.36px;
-height: 0px;
-left: 120px;
-top: 850px;
-
-}
-div.Maplogo{
-     /* image 5 */
-
-position: absolute;
-width: 61px;
-height: 50px;
-left: 60px;
-top: 920px;
-
-background: url(image);
-}
-div.line3{
-     /* Email Group */
-
-position: absolute;
-width: 255.36px;
-height: 0px;
-left: 120px;
-top: 920px;
-
-}
-div.quinabigan{
-     /* Quinabigan,Pinamalayan */
-
-position: absolute;
-width: 164px;
-height: 19px;
-left: 120px;
-top: 920px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-
-color: #000000;
-
-
-}
-div.backgroundAboutMe{
-     /* contact card */
-
-position: absolute;
-width: 729px;
-height: 700px;
-left: 450px;
-top: 400px;
-
-background: #57657A;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.about{
- /* ABOUT ME */
-
-position: absolute;
-width: 208px;
-height: 0px;
-left: 480px;
-top: 430px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 450;
-font-size: 38px;
-line-height: 0px;
-/* identical to box height, or 10% */
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-div.line4{
-     /* Email Group */
-
-position: absolute;
-width: 255px;
-height: 50px;
-left: 600px;
-top: 650px;
-}
-div.details1{
-     /* About Me details */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px 10px;
-
-position: absolute;
-width: 530px;
-height: 100px;
-left: 470px;
-top: 560px;
-
-
-}
-div.WhatIdo{
-  /* What I Do!*/
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-
-position: relative;
-width: 600px;
-height: 60px;
-left: 200px;
-top: 565px;
-
-}
-div.webbox{
-     /* profile card */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 270px;
-height: 164px;
-left: 490px;
-top: 720px;
-
-background: #1877F2;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.appbox{
-     /* profile card 1 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 270px;
-height: 164px;
-left: 850px;
-top: 720px;
-
-background: #1877F2;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.uibox{
-    /* profile card 2 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 270px;
-height: 164px;
-left: 490px;
-top: 910px;
-background: #1877F2;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.mentor{
-     /* profile card 3*/
-
-box-sizing: border-box;
-
-position: absolute;
-width: 270px;
-height: 164px;
-left: 850px;
-top: 910px;
-
-background: #1877F2;
-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-}
-div.webDevelopment{
-     /* Web Development */
-
-position: absolute;
-width: 226px;
-height: 20px;
-left: 550px;
-top: 710px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 550;
-font-size: 17px;
-line-height: 20px;
-/* identical to box height, or 83% */
-
-color: #000000;
-
-
-}
-div.webdevelopmentMessage{
-     /* As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications. */
-
-position: absolute;
-width: 250px;
-height: 359px;
-left: 500px;
-top: 740px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.AppDevelopment{
-    /* App Development */
-
-position: absolute;
-width: 221px;
-height: 20px;
-left: 910px;
-top: 710px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 20px;
-/* identical to box height, or 83% */
-
-color: #000000;
-
-
-}
-div.appDevelopmentMessage{
-     /* With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together. */
-
-position: absolute;
-width: 274px;
-height: 120px;
-left: 870px;
-top: 740px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.uiDesigning{
-     /* UI/UX Designing */
-
-position: absolute;
-width: 226px;
-height: 20px;
-left: 560px;
-top: 900px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 20px;
-/* identical to box height, or 167% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.uiMessage{
-/* Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about. */
-
-position: absolute;
-width: 274px;
-height: 80px;
-left: 500px;
-top: 930px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 350;
-font-size: 17px;
-line-height: 20px;
-/* or 143% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.mentorship{
-     /* Mentorship */
-
-position: absolute;
-width: 266px;
-height: 40px;
-left: 940px;
-top: 900px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 20px;
-/* identical to box height, or 167% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.mentorshipMessage{
-     /* I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career. */
-
-position: absolute;
-width: 275px;
-height: 120px;
-left: 857px;
-top: 920px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 320;
-font-size: 20px;
-line-height: 17px;
-/* or 143% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-
-}
-div.homeBox{
-     /* Rectangle 27 */
-
-position: absolute;
-width: 100px;
-height: 50px;
-left: 1070px;
-top: 405px;
-background: #D9D9D9;
-
-}
-div.HOME{
-     /* HOME */
-
-position: absolute;
-width: 110px;
-height: 0px;
-left: 1074px;
-top: 44px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 0px;
-/* identical to box height, or 0% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-div.SKILSS{
-     /* RESUME */
-
-position: absolute;
-width: 192px;
-height: 40px;
-left: 550px;
-top: 497px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 40px;
-/* identical to box height, or 83% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-div.CONTACT{
-     /* Contact */
-
-position: absolute;
-width: 262px;
-height: 59px;
-left: 535px;
-top: 591px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 40px;
-/* or 83% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-div.PORTFOLIO{
-     /* Portfolio */
-
-position: absolute;
-width: 208px;
-height: 40px;
-left: 555px;
-top: 706px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 40px;
-/* identical to box height, or 83% */
-letter-spacing: 0.025em;
-
-color: #000000;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.topnav {
-     width: 600px;
-     margin-top: 355px;
-    float: right; 
-    margin-right: -205px;
-    background-color: #131a6676;
-}
-
-.topnav a {
-  float: left;
-  color: #e7e3e3;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #5a0c0c;
-  color: rgb(165, 131, 131);
-}
-
-.topnav a.active {
-  background-color: #260ced;
-  color: rgb(212, 130, 130);
-}
-
-</style>
+  <title>Arnel G Rabacio-1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aboutme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
 <body>
-     <div class="topnav">
-          <a class="active" href="index.html">HOME</a>
-          <a href="index2.html">SKILLS</a>
-          <a href="index3.html">Contact</a>
-          <a href="index4.html">PORFOLIO</a>
-          <a href="index5.html">My PROJECT</a>
+    <nav class="navbar">
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+       </div>
+      <div class="navbar-link">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index1.html">ABOUT ME</a></li>
+          <li><a href="index2.html">SKILLS</a></li>
+          <li><a href="index3.html">PORFOLIO</a></li>
+        </ul>
+      </div>
+      <div class="mobile-navbar-link" id="menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index1.html">ABOUT ME</a></li>
+          <li><a href="index2.html">SKILLS</a></li>
+          <li><a href="index3.html">PORFOLIO</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1>Res<span>umes</span></h1>
+      </div>
+    </nav>
+  <div class="main-content">
+
+    <div class="profile">
+      <div class="image">
+        <img src="21.jpg" width="200" height="200">
+      </div>
+
+      <div class="profile-name">
+        <div>
+          <h2>Arnel G. Rabacio</h2>
         </div>
-<div class="blue"><p></p></div>
-<div class="picture"><img src="21.jpg" width="199.5" height="172"></div> 
-<div class="name"><p> Arnel G Rabacio</p></div>
 
-<div class="youtub">
-    <a href="https://youtube.com/@arnelrabacio8015?si=sxk7jjTbcmGmJhJS">
+        <div>
+          <h4>Web Developer</h4>
+        </div>
 
-         <img src="youtube.png" width="60" height="55">
-    </a>
-    
-</div> 
+        <div class="icon">
+          <a href="https://www.facebook.com/arnel.rabacio?mibextid=JRoKGi"><span
+              class="fa-brands fa-square-facebook"></span></a>
+          <a
+            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fcai1922%3Ft%3DTM8yCmOq2JRSLILAqG9MWA%26s%3D09%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1TMKkitg5CFTeyVRv_WN3hm4KqP_Lm09BBfgKbGHQIka35NkbQQfa81Y4_aem_Aap9MJjHPME0i49NQJTbytexMNUZxBnNzu5YH-9UmLY2Y2rtbDUsOvC5iRykPAh-VJRwOuhaeepeVd5pyUcyz7iB&h=AT0w9Q7c4Ab3aRK_96bxacmCQYfGCIp7C-rjDUSnBOaHrJgbnepuin6ozLfVmVyOqOzrE8UqGqSOGdIvbIlUbUpjcniyuUGkAMuGy9W-29k8IDB8C6wJxaGGgarE9Q0OgtSymA"><span
+              class="https://twitter.com/ArnelRabacio/status/1717908078526677245?s=01"></span></a>
+          <a href="https://github.com/Nelone08"><span class="fa-brands fa-square-github">
+            </span></a>
+          <a href=""><span class="fa-brands fa-linkedin"></span></a>
+
+          <span class="button_ _icon">
+        </div>
+
+     
+
+      <div class="info">
+        <div class="phone">
+          <div><i class="fa-solid fa-mobile-screen"></i> +639518699649</div>
+        </div>
+        <div class="email">
+          <div> <i class="fa-solid fa-envelope"></i> <a
+              href="arielrabacio@yahoo.com">arielrabacio@yahoo.com</a> </div>
+        </div>
+        <div class="location">
+          <div><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Quinabigan,+Oriental+Mindoro/@12.999835,121.4729566,15z/data=!3m1!4b1!4m6!3m5!1s0x33bcaf3e8a5be373:0xa031746c06957812!8m2!3d12.9993895!4d121.4770388!16s%2Fg%2F11fyx9khhg?entry=ttu"> Quinabigan.sampalocan
+              Pinamalayan Oriental Mindoro</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="about-me">
+      <div class="line">
+        <h1>About Me<span>________</span></h1>
+      </div>
+
+      <div class="rec3">
+        <p>Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile Web developer with a keen interest in exploring the latest cutting-edge technologies. My journey in the world of web development has been nothing short of exhilarating, and I constantly strive to enhance my skills and embrace emerging trends in the industry</p><br>
+        <p>To design,deverlop, and implement innovative hardware solutions that seamlessly
+          integrated with software, enchacing functionality,reliability, and efficiency
+          across various application. My goal is to push the boundaries of technology by
+          creating robust, user-friendly hardware systems that meet the evolving needs of
+          industries and improve the quality of life. I are committed to continous learning,
+          ethical practices, and contributing to a sustainable technological future
+        </p>
+
+        <div class="what">
+          <h1>What I Do!</h1>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <i class="fa-solid fa-code"></i> <span>Web Development</span>
+              <p>As a developer, I find myself most
+                captivated by the power and flexibility of
+                NEXT.js. I'm always eager to dive into new
+                projects that leverage NEXT.js and
+                discover innovative ways to create fast,
+                scalable, and user-friendly applications.</p>
+            </div>
+          </div>
+
+          <div class="column-1">
+            <div class="card">
+              <img src="arduino.jpg" width="30" height="30" ><span>arduino</span>
+              <p>
+                Proficient in Arduino programming and hardware design for prototyping and developing interactive projects and IoT devices.Experience with sensor integration, motor control, and data logging.Strong understanding of circuit design and troubleshooting</p>
+            </div>
+          </div>
+        </div>
 
 
-<div class="twit">
+        <div class="row1">
+          <div class="column1">
+            <div class="card">
+              <h3>UI/UX Designing</h3>
+              <p>Crafting visually appealing and intuitive user
+                interfaces that offer a delightful user
+                experience is something I'm truly fanatic
+                about.</p>
+            </div>
+            <div class="row3">
+                <div class="column3">
+                  <div class="card">
+                    <h3>Mentorship</h3>
+                    <p>I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career.</p>
+          </div>
+        </div>
 
-<a href="https://twitter.com/ArnelRabacio/status/1717908078526677245?s=01">
-
-  <img src="twitter.jpg" width="60" height="55">
-
-</a>
-
-</div>
-
-<div class="FB">
- <a href="https://www.facebook.com/arnel.rabacio?mibextid=JRoKGi">
-     <img src="fb.png" width="60" height="55">
-</a>
-
-</div>
-
-
-<div class="getgub">
-
-     <a href="https://www.figma.com/files/team/1371659217232119339/drafts?fuid=1371659213142150567">
-     <img src="Gethub.png" width="60" height="55">
-</a>
-
-</div> 
+      </div>
+    </div>
+  </div>
 
 
-<div class="Box"><p></p></div>
-<div class="Phone"><img src="Phone.jpg" width="44" height="44"></div> 
-<div class="line"><p>______________________</p></div>
-<div class="line"><p> +09518699649</p></div>
-
-
-<div class="iconMessage">
-     <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfeVevsh1hbg3yKrToGzmurTZ1l5BQo4PbYtZCMlAVJuKk5LPQCcjHDQ878QFbKq5Kp9pfYcVR6dqGt6__hMmj4_nzw___htwW4tDb6HEczWXg&smuh=58665&lh=Ac9i-JrSFe0DqS-a2Jg/">
-     <img src="Message.png" width="44" height="44">
-</a>
-
-</div> 
-
-
-<div class="email"><p>www.facebook.com</p></div>
-<div class="line2"><p>______________________</p></div>
-
-
-<div class="Maplogo">
-     <a href="https://www.google.com/maps/place/Quinabigan,+Oriental+Mindoro/@12.999876,121.4523999,14z/data=!3m1!4b1!4m6!3m5!1s0x33bcaf3e8a5be373:0xa031746c06957812!8m2!3d12.9993895!4d121.4770388!16s%2Fg%2F11fyx9khhg?entry=ttu">
-     <img src="Map.png" width="44" height="44">
-</a>
-
-</div>
-
-
-
-
-<div class="line3"><p>______________________</p></div>
-<div class="quinabigan"><p>Quinabigan,Pinamalayan</p></div>
-<div class="backgroundAboutMe"><p></p></div>
-<div class="about"><p>ABOUT ME</p>
-
-<div class="line4t"><p>______________________</p></div>
-</div>
-<div class="details1"><p> Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile
-     full-stack developer with a keen interest in exploring the latest cutting-edge technologies.
-     My journey in the world of web development has been nothing short of exhilarating, and 
-     I constantly strive to enhance my skills and embrace emerging trends in the industry.</p></div>
-<div class="WhatIdo"><p>What I Do!</p></div>
-<div class="webbox"><p></p></div>
-<div class="appbox"><p></p></div>
-<div class="uibox"><p></p></div>
-<div class="mentor"><p></p></div>
-<div class="webDevelopment"><p>Web Development</p></div>
-<div class="webdevelopmentMessage"><p>As a developer, I find myself most captivated by the power and flexibility of NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and discover innovative ways to create fast, scalable, and user-friendly applications.
-</p></div>
-<div class="AppDevelopment"><p>App Development</p></div>
-<div class="appDevelopmentMessage"><p>With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into reality and shape the future together.
-</p></div>
-<div class="uiDesigning"><p> UI/UX Designing </p></div>
-<div class="uiMessage"><p>Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about.
-</p></div>
-<div class="mentorship"><p>Mentorship</div>
-     <div class="mentorshipMessage"><p>I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career.
-     </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
+

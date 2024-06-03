@@ -1,112 +1,51 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>Home</title>
-
-</head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    background: url(image1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-  }
-
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    place-items: center;
-    gap: 20px;
-    padding: 10px 30px;
-  }
-
-  .rect {
-   display: flex;
-   flex-direction: column;
-color: rgba(221, 18, 18, 0.993);
-  }
-
-  header {
-    top: 0%;
-    position: sticky;
-    height: 90px;
-    width: 125vw;
-    background-color: blueviolet;
-    width: 120vw;
-    justify-content: space-between;
-    place-items: center;
-    padding: 0 10px;
-  }
-
-  header ul {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    font-size: 10px;
-  }
-
-  header ul li {
-
-    list-style: none;
-  }
-
-  header ul li a {
-    color: rgba(232, 225, 225, 0.815);
-    text-decoration: none;
-  }
-
-  header ul li a:hover {
-    color: rgba(14, 20, 144, 0.472);
-  }
-
-  header.logo {
-    font-size: 30px;
-  }
-</style>
-
-</html>
-
-<body>
-
-  <header>
-    <div class="logo">
-      <img src="Home..jpg" width="80">
-
-    </div>
-    <ul>
-
-      <li><a href="index1.html">ABOUT ME</a>
-      <li>
-      <li><a href="index2.html">SKILLS</a>
-      <li>
-      <li><a href="index3.html">CONTACT</a>
-      <li>
-      <li><a href="index4.html">PORFOLIO</a>
-      <li>
-        <a href="index5.html">My PROJECT</a>
-
-    </ul>
-  </header>
-
-
-
-  <div class="main-content">
-    <div class="rect">
-      <div class="name">
-        <h2>
-          HI I AM! ARNEL G RABACIO
-          ("WEB DEVELOPMENT")
-        </h2>
+<html lang="en">
+  <head>
+    <title>Arnelportfolio-1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+       </div>
+      <div class="navbar-link">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="index1.html">ABOUT</a></li>
+          <li><a href="index2.html">SKILLS</a></li>
+          <li><a href="index3.html">PORFOLIO</a></li>>
+        </ul>
       </div>
-      <img src="image2.jpg" width="450" height="500">
+
+      <div class="mobile-navbar-link" id="menu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="index1.html">ABOUT</a></li>
+          <li><a href="index2.html">SKILLS</a></li>
+          <li><a href="index3.html">PORTFOLIO</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+      </div>
+    </nav>
+      <div class="content">
+        <div>
+            <h1>Hi!</h1>
+        </div>
+        <div>
+          <h2>Im, Arnel G Rabacio</h2>         
+        </div>   
+      </div>
+      <div class="image">
+      <img src="21.jpg" width="300" height="300">
     </div>
-  </div>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
